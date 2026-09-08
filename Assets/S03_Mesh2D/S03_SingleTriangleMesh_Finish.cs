@@ -25,6 +25,6 @@ public class S03_SingleTriangleMesh_Finish : MonoBehaviour
         mesh.RecalculateNormals();
 
         GetComponent<MeshFilter>().mesh = mesh;
-        //GetComponent<MeshRenderer>().sharedMaterial = new Material(Shader.Find("Universal Render Pipeline/Lit"));
+        GetComponent<MeshRenderer>().sharedMaterial = new Material(Shader.Find("Universal Render Pipeline/Lit"));
     }
 }
