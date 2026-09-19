@@ -10,12 +10,11 @@ public class S04_Assignment : MonoBehaviour
             new Vector3(0f, -1f, 0f),
             new Vector3(0f, 0f, -1f),
             new Vector3(1f, 0f, 0f),
-            new Vector3(0f, 0f, 1f)
+            new Vector3(0f, 0f, 1f),
             new Vector3(-1f, 0f, 0f)
 
         };
 
-        // TODO 2: 정점 3개씩 묶어 삼각형들을 구성하세요
         int[] triangles = new int[]
         {
             0, 3, 2,
