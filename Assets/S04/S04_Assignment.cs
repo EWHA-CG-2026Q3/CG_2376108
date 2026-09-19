@@ -6,8 +6,8 @@ public class S04_Assignment : MonoBehaviour
     {
         Vector3[] vertices = new Vector3[]
         {
-            new Vector3(0f, 1.5f, 0f),
-            new Vector3(0f, -1.5f, 0f),
+            new Vector3(0f, 1f, 0f),
+            new Vector3(0f, -1f, 0f),
             new Vector3(0f, 0f, -1f),
             new Vector3(1f, 0f, 0f),
             new Vector3(0f, 0f, 1f)
