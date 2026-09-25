@@ -9,7 +9,7 @@ public class S05_MyMeshRenderer : MonoBehaviour
     [SerializeField] private Color backgroundColor = new Color(0f, 0f, 0f, 1f);
 
     [Header("무늬 실습 (줄무늬·체스판 공용)")]
-    [SerializeField] private int patternSize = 16;
+    [SerializeField] private int patternSize = 4;
     [SerializeField] private Color colorA = new Color(1f, 1f, 1f, 1f); // 흰색
     [SerializeField] private Color colorB = new Color(0.3f, 0.5f, 0.8f, 1f); // 하늘색
 
@@ -20,20 +20,20 @@ public class S05_MyMeshRenderer : MonoBehaviour
     {
         targetImage = GetComponent<RawImage>();
 
-        // 1. 빈 텍스처 생성
+        
         canvasTexture = new Texture2D(canvasWidth, canvasHeight);
 
-        // 2. 픽셀 경계가 흐려지지 않게 설정
+        
         canvasTexture.filterMode = FilterMode.Point;
 
-        FillVerticalStripes(patternSize, colorA, colorB); // 과제 2: 줄무늬
-        // FillCheckerboard(patternSize, colorA, colorB);  // 과제 3: 체스판
+        FillVerticalStripes(patternSize, colorA, colorB); // 줄무늬
+        // FillCheckerboard(patternSize, colorA, colorB);  // 체스판
         // -------------------------------------------------------------
 
-        // 4. 텍스처에 픽셀 변경 사항 적용
+        
         canvasTexture.Apply();
 
-        // 5. RawImage에 텍스처 연결
+        
         targetImage.texture = canvasTexture;
     }
 
