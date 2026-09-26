@@ -99,11 +99,6 @@ public class S07_Clipping : MonoBehaviour
     // 지금은 "통과만 시키는" 상태 — 완성하기 전까지는 이 단계에서 아무것도 안 잘림
     private List<Vector2> ClipRight(List<Vector2> input, float boundary)
     {
-        if(input.Count == 0) return input;
-        for(int i = 0; i < input.Count; i++)
-        {
-            DrawTriangle(polygon[0], polygon[i], polygon[(i + 1) % polygon.Count], Color.red);
-        }
         return input;
 
         // TODO: 위의 return input; 을 지우고, ClipLeft와 같은 구조로
@@ -113,11 +108,6 @@ public class S07_Clipping : MonoBehaviour
     // ── TODO: 아래쪽 경계(y >= boundary)로 자르는 함수를 완성하세요 ──
     private List<Vector2> ClipBottom(List<Vector2> input, float boundary)
     {
-        if(input.Count == 0) return input;
-        for (int i = 0; i < input.Count; i++)
-        {
-            DrawTriangle(polygon[0], polygon[i], polygon[(i + 1) % polygon.Count], Color.blue);
-        }
         return input;
 
         // TODO: ClipLeft와 같은 구조, 비교 축만 x → y로 바뀝니다.
@@ -126,12 +116,6 @@ public class S07_Clipping : MonoBehaviour
     // ── TODO: 위쪽 경계(y <= boundary)로 자르는 함수를 완성하세요 ──
     private List<Vector2> ClipTop(List<Vector2> input, float boundary)
     {
-        if(input.Count == 0) return input;
-        for (int i = 0; i < input.Count; i++)
-        {
-            DrawTriangle(polygon[0], polygon[i], polygon[(i + 1) % polygon.Count], Color.green);
-
-        }
         return input;
 
         // TODO: ClipRight와 같은 부등호 방향, 비교 축만 x → y로 바뀝니다.
