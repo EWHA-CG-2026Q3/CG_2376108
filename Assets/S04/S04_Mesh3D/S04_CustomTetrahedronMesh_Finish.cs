@@ -22,21 +22,18 @@ public class S04_CustomTetrahedronMesh_Finish : MonoBehaviour
             0, 3, 1,  // 옆면 C
         };
 
-        // 잘못된 예시 — 모든 삼각형의 정점 순서가 반대로 뒤집혀 있음
-        //int[] triangles = new int[]
-        //{
-        //    1, 2, 3,  // 밑면 (원래: 1, 3, 2)
-        //    0, 2, 1,  // 옆면 A (원래: 0, 1, 2)
-        //    0, 3, 2,  // 옆면 B (원래: 0, 2, 3)
-        //    0, 1, 3,  // 옆면 C (원래: 0, 3, 1)
-        //};
-
         Mesh mesh = new Mesh();
         mesh.vertices = vertices;
         mesh.triangles = triangles;
         mesh.RecalculateNormals();
 
         GetComponent<MeshFilter>().mesh = mesh;
-        GetComponent<MeshRenderer>().sharedMaterial = new Material(Shader.Find("Universal Render Pipeline/Lit"));
+
+        // 💡 수정된 부분: 인스펙터에 재질이 비어있을 때만 기본 URP Lit 재질 생성
+        MeshRenderer meshRenderer = GetComponent<MeshRenderer>();
+        if (meshRenderer.sharedMaterial == null)
+        {
+            meshRenderer.sharedMaterial = new Material(Shader.Find("Universal Render Pipeline/Lit"));
+        }
     }
 }
