@@ -1,7 +1,7 @@
 using UnityEngine;
 using UnityEngine.UI;
 
-// S05_MeshRenderer
+// S05_PixelCanvas
 // FillBackground, FillRandom은 참고용으로 이미 완성되어 있습니다.
 // 이 패턴을 참고해서 FillVerticalStripes, FillCheckerboard를 완성하세요.
 
