@@ -45,7 +45,7 @@ public class S19_DiamondMesh_Faceted : MonoBehaviour
 
     public void SetVertices(Vector3[] v)
     {
-        // ▼ 여기부터 DiamondMesh_Rewinded와 다름
+        // 여기부터 DiamondMesh_Rewinded와 다름
 
         // 정점: 삼각형 배열의 번호를 그 정점으로 바꿔 차례로 적음 (면마다 3개, 모두 24개)
         //       0,1,2 → v[0], v[1], v[2]
@@ -86,7 +86,7 @@ public class S19_DiamondMesh_Faceted : MonoBehaviour
             uvTopCenter, uvBottomRight, uvBottomLeft,
         };
 
-        // ▲ 여기까지
+        // 여기까지
 
         mesh.Clear();
         mesh.vertices = facetedVertices;     // 다름: 6개 대신 24개
