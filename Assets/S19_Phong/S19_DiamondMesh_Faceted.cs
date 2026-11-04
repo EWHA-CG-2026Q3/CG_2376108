@@ -8,7 +8,7 @@ using UnityEngine;
 
 [ExecuteAlways]
 [RequireComponent(typeof(MeshFilter), typeof(MeshRenderer))]
-public class DiamondMesh_Faceted : MonoBehaviour
+public class S19_DiamondMesh_Faceted : MonoBehaviour
 {
     [Header("다이아몬드 원본 정점 (0=아래 꼭짓점, 1~4=중간 사각형, 5=위 꼭짓점)")]
     [SerializeField]
