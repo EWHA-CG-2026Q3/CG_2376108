@@ -1,4 +1,4 @@
-﻿Shader "CG/S19_Phong"
+﻿Shader "CG/S19_Phong_Start"
 {
     Properties
     {
