@@ -58,7 +58,7 @@
                 float diffuse  = max(0, dot(N, L));                              // 확산광
                 float specular = pow(max(0, dot(R, V)), _Shininess);             // 반사광
 
-                  float3 color = _BaseColor.rgb * (_Ambient + diffuse * mainLight.color)
+                float3 color = _BaseColor.rgb * (_Ambient + diffuse * mainLight.color)
                + _SpecularColor.rgb * specular * mainLight.color; // 고친 줄
                 return float4(color, 1);
             }
