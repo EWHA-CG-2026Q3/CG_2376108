@@ -1,9 +1,10 @@
 ﻿using UnityEngine;
 
+[ExecuteAlways]
 [RequireComponent(typeof(MeshFilter), typeof(MeshRenderer))]
 public class S04_CustomTetrahedronMesh_Finish : MonoBehaviour
 {
-    void Start()
+    void OnEnable()
     {
         // 정육면체 8개 정점(S3) 중 0, 2, 5, 7번 — 대각선으로 고르면 정사면체가 됨
         Vector3[] vertices = new Vector3[]

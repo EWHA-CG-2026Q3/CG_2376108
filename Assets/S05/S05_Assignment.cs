@@ -2,7 +2,7 @@ using UnityEngine;
 using UnityEngine.UI;
 
 [RequireComponent(typeof(RawImage))]
-public class S05_MyMeshRenderer : MonoBehaviour
+public class S05_Assignment : MonoBehaviour
 {
     [SerializeField] private int canvasWidth = 256;
     [SerializeField] private int canvasHeight = 256;
