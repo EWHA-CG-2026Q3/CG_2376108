@@ -8,7 +8,7 @@ Material:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: Mat_S16_MyCoal_Finish
-  m_Shader: {fileID: 4800000, guid: 882b4f8b3ce778a438e5959e8c416b10, type: 3}
+  m_Shader: {fileID: 4800000, guid: 43970382f9d4e154d86d9526389150a4, type: 3}
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
   m_ValidKeywords: []
@@ -27,6 +27,6 @@ Material:
     m_Floats: []
     m_Colors:
     - _BaseColor: {r: 0.18798423, g: 1, b: 0, a: 1}
-    - _EmissionColor: {r: 2, g: 0, b: 0.040418625, a: 1}
+    - _EmissionColor: {r: 1, g: 0, b: 0, a: 1}
   m_BuildTextureStacks: []
   m_AllowLocking: 1
